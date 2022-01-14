@@ -55,7 +55,7 @@ namespace Calculator
                     CalculationFactor = 1.8f;
                 }
             }
-            else
+            else if (age>12)
             {
                 if (FatWeightLoseOrDietaAfterIntensivTerapy == true)
                 {
@@ -101,7 +101,7 @@ namespace Calculator
                             CalculationFactor = 3;
                         }
                     }
-                    if (Feeding == true)//jeśli true waruneczki ze szczeniaczkami na cycu
+                    else if (Feeding == true)//jeśli true waruneczki ze szczeniaczkami na cycu
                     {
                         if (QtyOfPuppies == 1)
                         {
